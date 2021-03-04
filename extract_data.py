@@ -49,7 +49,8 @@ def get_info(article_page):
 
 # Connect to mongodb
 def connect():
-    client = MongoClient("mongodb+srv://nutest:nutest@cluster0.fskuj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+    # Enter your creadentials
+    client = MongoClient("mongodb+srv://<YourCredentials>:<YourCredentials>@cluster0.fskuj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     return client
 
 # Insert into mongo
